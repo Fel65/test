@@ -7,14 +7,14 @@ def number_negatives(seq):
         return 0
 
 
-def test_seq_E_should_return_1():
-    result = number_negatives('E')
-    assert result == 1
-
-
 def test_empty_seq_should_return_0():
     result = number_negatives('')
     assert result == 0
+
+
+def test_seq_E_should_return_1():
+    result = number_negatives('E')
+    assert result == 1
 
 # number_negatives('E') == 1
 # False
