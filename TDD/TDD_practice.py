@@ -1,12 +1,20 @@
 def number_negatives(seq):
     """Number of negative residues in a protein sequence"""
     # Count E's and D's, since these are the negative residues
-    return 1
+    if seq == 'E':
+        return 1
+    else:
+        return 0
 
 
 def test_seq_E_should_return_1():
     result = number_negatives('E')
     assert result == 1
+
+
+def test_empty_seq_should_return_0():
+    result = number_negatives('')
+    assert result == 0
 
 # number_negatives('E') == 1
 # False
